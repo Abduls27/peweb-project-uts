@@ -100,16 +100,16 @@ window.addEventListener("scroll", function () {
       imgs.classList.add(
         "animate-fade-down",
         "animate-once",
-        "animate-duration-800",
-        "animate-delay-200",
+        "animate-duration-1000",
+        "animate-delay-500",
         "animate-ease-in-out"
       );
     } else {
       imgs.classList.remove(
         "animate-fade-down",
         "animate-once",
-        "animate-duration-800",
-        "animate-delay-200",
+        "animate-duration-1000",
+        "animate-delay-500",
         "animate-ease-in-out"
       );
     }
