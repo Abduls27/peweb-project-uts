@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid-card {
+    @apply aspect-[1/1] md:aspect-[1/1] xl:aspect-[1/1] overflow-hidden relative hover:scale-95 transition-all duration-500;
+  }
+
+  .grid-card-img {
+    @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500;
+  }
+
+  .grid-card-information {
+    @apply w-full h-full bg-cover bg-center absolute;
+  }
+
+  .wrap {
+    animation: scroll 30s linear infinite;
+  }
+
+  .animate-loading-text {
+    transform: translateX(-50px);
+  }
+
+  @font-face {
+    font-family: "Bumbbled";
+    src: url("src/Bumbbled.otf") format("otf");
+
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .line {
+    @apply h-80 bg-zinc-800 dark:bg-zinc-50 ml-16 my-8 relative;
+    width: 1px;
+  }
+
+  .circle {
+    @apply z-50 h-6 w-6 absolute bg-zinc-800 dark:bg-zinc-50 rounded-full;
+    top: 5%;
+    left: -11px;
+  }
+
+  .circle2 {
+    @apply z-50 h-6 w-6 absolute bg-zinc-800 dark:bg-zinc-50 rounded-full;
+    top: 45%;
+    left: -11px;
+  }
+
+  .circle3 {
+    @apply z-50 h-6 w-6 absolute bg-zinc-800 dark:bg-zinc-50 rounded-full;
+    top: 94%;
+    left: -11px;
+  }
+
+  .bg-move-gradient {
+    background-color: hsla(321, 0%, 0%, 1);
+    background-color: sla(321, 0%, 0%, 1);
+    background-image: radial-gradient(
+        at 89% 63%,
+        hsla(32, 90%, 63%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 48% 64%, hsla(229, 82%, 63%, 1) 0px, transparent 50%),
+      radial-gradient(at 61% 35%, hsla(303, 85%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 31% 34%, hsla(149, 99%, 61%, 1) 0px, transparent 50%);
+    background-size: 200% 200%;
+    animation: AnimationName 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 32%;
+    }
+    50% {
+      background-position: 32% 62%;
+    }
+    100% {
+      background-position: 62% 100%;
+    }
+  }
+
+  @keyframes scroll {
+    to {
+      translate: calc(-4 * 10rem);
+    }
+  }
+
+  .scroll-reveal {
+    color: hsl(0 0% 100% / 0.2);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, white, white);
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view(y);
+  }
+
+  .scroll-reveal h2 span {
+    animation-range-start: cover 20vh;
+    animation-range-end: cover 30vh;
+  }
+
+  .scroll-reveal-light {
+    color: hsla(240, 10%, 3.9%, 0.2);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, rgb(9 9 11), rgb(9 9 11));
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view(y);
+  }
+
+  .scroll-reveal-light {
+    animation-range-start: cover 20vh;
+    animation-range-end: cover 30vh;
+  }
+
+  @keyframes scroll-reveal {
+    to {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+@layer utilities {
+  #toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+  }
+}

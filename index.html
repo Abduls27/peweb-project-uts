@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/output.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <title>Portofolio</title>
+</head>
+
+<body class="-mt-16 bg-zinc-100 dark:bg-zinc-950 text-zinc-50">
+
+  <!-- loading screen -->
+  <!-- <div id="loading-screen" class="fixed left-0 top-0 w-full h-full bg-zinc-800 flex justify-center items-center z-50">
+    <h1 class="text-white animate-loading-text"><span class="font-bumbbled text-2xl">Hello</span>, <span
+        class="text-lg">welcome to my portofolio</span></h1>
+  </div> -->
+
+  <nav id="navbar" class="bg-transparent backdrop-filter backdrop-blur-sm top-0 sticky z-20 font-normal text-zinc-50">
+    <div class="max-w-screen-xl flex flex-wrap justify-between items-center px-8 py-3">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3">
+        <span class="text-2xl">Portofolio</span>
+      </a>
+          <button id="navbar-btn" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 hover:text-gray-900 rounded-lg md:hidden focus:outline-none"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="flex flex-col rounded-sm p-4 md:p-0 md:flex-row md:space-x-8 md:pt-1 dark:bg-transparent">
+            <li>
+              <a href="#"
+                class="block mb-2 py-2 px-3 rounded-sm md:border-0 md:p-0 dark:hover:bg-zinc-800 dark:hover:text-white md:dark:hover:text-zinc-600 md:dark:hover:bg-transparent">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block mb-2 py-2 px-3 rounded-sm md:border-0 md:p-0 dark:hover:bg-zinc-800 dark:hover:text-white md:dark:hover:text-zinc-600 md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block mb-2 py-2 px-3 rounded-sm md:border-0 md:p-0 dark:hover:bg-zinc-800 dark:hover:text-white md:dark:hover:text-zinc-600 md:dark:hover:bg-transparent">Project</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block mb-2 py-2 px-3 rounded-sm md:border-0 md:p-0 dark:hover:bg-zinc-800 dark:hover:text-white md:dark:hover:text-zinc-600 md:dark:hover:bg-transparent">Contact</a>
+            </li>
+            <li>
+              <input type="checkbox" id="toggle" class="hidden" checked>
+              <label for="toggle">
+                <img id="dark" src="src/icon/dark-mode.svg" alt="dark-mode" class="h-6 block mt-5 md:mt-0 px-3 rounded-sm md:border-0 md:p-0 cursor-pointer">
+              </label>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+  <section class="flex h-screen bg-move-gradient rounded-b-xl section-black">
+    <div class="flex absolute justify-start flex-col bottom-0 mb-12 mx-8">
+      <h1 class="font-bold text-7xl">Fahmi Abdullah</h1>
+      <p class="font-light text-zinc-300 text-xl py-4 px-1">Beginner Full Stack Developer</p>
+    </div>
+  </section>
+
+  <!-- about -->
+  <article class="mb-36">
+    <h1 class="text-5xl font-semibold mx-8 mt-8 scroll-reveal-light dark:scroll-reveal">About me</h1>
+    <!-- judul -->
+    <div class="flex justify-between mt-6 mx-8 border-b border-zinc-800 dark:border-zinc-100 pb-2 items-center text-zinc-800 dark:text-zinc-50">
+      <div>
+        <h3>Full stack developer</h3>
+        <h3>Beginner web developer</h3>
+      </div>
+      <div>
+        <h3>Gresik / East Java</h3>
+      </div>
+    </div>
+
+    <!-- isi -->
+    <div class="mt-2 mx-16 scroll-reveal-light dark:scroll-reveal">
+      <h1 class="text-3xl">
+        I’m a beginner fullstack and web developer with <br />
+        more than 2 years experiences. Starting code since <br />
+        studies in senior high school
+      </h1>
+    </div>
+
+    <!-- judul 2 -->
+    <div class="flex gap-60 mt-16 mx-8 border-b border-zinc-800 dark:border-zinc-100 pb-2 w-fit items-center text-zinc-800 dark:text-zinc-50">
+      <div>
+        <h3>Progamming Languages</h3>
+        <h3>Frameworks</h3>
+      </div>
+      <div>
+        <h3>Skill</h3>
+      </div>
+    </div>
+
+    <!-- isi animasi css -->
+    <div class="mt-4 overflow-hidden text-zinc-800 dark:text-zinc-50">
+      <ul class="flex gap-12 flex-row text-nowrap justify-stretch wrap">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Java</li>
+        <li>Bootstrap</li>
+        <li>TailwindCSS</li>
+        <li>Laravel</li>
+        <li>Spring Boot</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Java</li>
+        <li>Bootstrap</li>
+        <li>TailwindCSS</li>
+        <li>Laravel</li>
+        <li>Spring Boot</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- education -->
+  <article>
+    <!-- judul -->
+    <div
+      class="flex gap-52 w-fit mt-16 mx-8 border-b border-zinc-800 dark:border-zinc-100 text-zinc-800 dark:text-zinc-50 pb-2 items-center section-white ">
+      <div class="py-2">
+        <h3>Educational <br> background</h3>
+      </div>
+      <div>
+        <h3>Education</h3>
+      </div>
+    </div>
+
+    <div>
+      <!-- timeline -->
+      <div class="text-zinc-800 dark:text-zinc-50">
+        <div class="line">
+          <!-- information -->
+          <div class="circle"></div>
+          <div class="flex flex-col w-80 pl-10 my-2 text-lg md:w-etext md:py-2 md:-my-2">
+            <h3>Public Junior High School 1 Kebomas Gresik</h3>
+            <p class="text-sm pt-2">2016 - 2019</p>
+          </div>
+          <div class="circle2"></div>
+          <div class="w-80 pl-10 py-12 -my-3 text-lg md:py-20 md:-my-4">
+            <h3>Public Senior High School 1 Gresik</h3>
+            <p class="text-sm pt-2">2019 - 2022</p>
+          </div>
+          <div class="circle3"></div>
+          <div class="w-80 pl-10 py-14 text-lg md:w-etext md:-my-12">
+            <h3>Universitas Internasional Semen Indonesia</h3>
+            <p class="text-sm pt-2">2022 - Present</p>
+          </div>
+          <!-- end information -->
+
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- halaman 2 project and skill-->
+  <article class="mt-32 mb-24 text-slate-700 dark:text-zinc-50 ">
+    <h1 class="text-5xl font-semibold mx-8 mt-24">Projects and Certifications</h1>
+    <!-- judul -->
+    <div class="flex justify-between mt-8 mx-8 border-b border-zinc-800 dark:border-zinc-100 pb-2 items-center">
+      <div>
+        <h3>College exam projects</h3>
+        <h3>Certification</h3>
+      </div>
+      <div>
+        <h3>Projects</h3>
+      </div>
+    </div>
+
+    <!-- isi -->
+    <div class="mt-4 p-2 font-sans grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-4 md:p-4">
+      <h2 class="h-15 ml-6 md:col-start-1 md:flex">
+        <span class="self-center text-4xl font-thin">Hover picture <br />
+          for details</span>
+      </h2>
+
+      <!-- img pengalaman -->
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/freecodecamp.png')]"></div>
+        <!-- hover information -->
+        <div
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">FreeCodeCamp<br />
+              <span class="text-base font-light">Basic HTML and HTML5</span>
+            </span>
+          </div>
+        </div>
+        <!-- end hover information -->
+      </div>
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/mosdm.png')]"></div>
+        <!-- hover information -->
+        <a href="https://www.figma.com/proto/NgyEnzZlUTf6R2cUjakWr8/mosdm-nikah-yuk?page-id=0%3A1&type=design&node-id=1-5&viewport=134%2C90%2C0.17&t=bW623kuwXZ6el5nf-1&scaling=scale-down&starting-point-node-id=133%3A2085&mode=design" target="_blank"
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">Nikah Yuk<br />
+              <span class="text-base font-light">Project UAS MOSDM Desain & Prototipe Figma</span>
+            </span>
+          </div>
+        </a>
+        <!-- end hover information -->
+      </div>
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/dicoding.png')]"></div>
+        <!-- hover information -->
+        <a href="https://www.dicoding.com/certificates/07Z6W7V4WZQR?trk=public_profile_see-credential" target="_blank"
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">DBS Foundation Coding Camp Dicoding <br />
+              <span class="text-base font-light">Belajar Dasar Pemrograman Web</span>
+            </span>
+          </div>
+        </a>
+        <!-- end hover information -->
+      </div>
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/dicoding.png')] z-0"></div>
+        <!-- hover information -->
+        <div
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">DBS Foundation Coding Camp Dicoding <br />
+              <span class="text-base font-light">Belajar Dasar Pemrograman JavaScript</span>
+            </span>
+          </div>
+        </div>
+        <!-- end hover information -->
+      </div>
+
+      <!-- keterngan pengalaman -->
+      <div class="h-15 md:flex">
+        <span class="self-center text-4xl font-thin">With some <br />
+          certification</span>
+      </div>
+    </div>
+
+    <!-- isi 2 -->
+    <div class="mt-24 p-2 font-sans grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-4 md:p-4">
+      <h2 class="h-15 ml-6 md:col-start-1 md:flex">
+        <span class="self-center text-4xl font-thin">College exam <br />
+          projects
+        </span>
+      </h2>
+
+      <!-- img pengalaman -->
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/pbo.png')]"></div>
+        <!-- hover information -->
+        <div
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">Sistem Pembayaran Listrik<br />
+              <span class="text-base font-light">Project UAS PBO Menggunakan Java Spring Boot & Tailwind CSS</span>
+            </span>
+          </div>
+        </div>
+        <!-- end hover information -->
+      </div>
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/dpp.png')]"></div>
+        <!-- hover information -->
+        <a href="https://www.figma.com/proto/Qlseu8YbwVmwOs6d4OvSrH/dpp?page-id=0%3A1&type=design&node-id=44-579&viewport=470%2C726%2C0.11&t=igepz3tBoW9HYmaD-1&scaling=scale-down&starting-point-node-id=44%3A579&mode=design" target="_blank"
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">Redesign SKEM UISI<br />
+              <span class="text-base font-light">Project UAS DPP Desain & Prototipe Figma</span>
+            </span>
+          </div>
+        </a>
+        <!-- end hover information -->
+      </div>
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/tugas1peweb.png')]"></div>
+        <!-- hover information -->
+        <a href="https://fahmiabdullah.c1.is/TUGAS/1.html" target="_blank"
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">Tugas 1<br />
+              <span class="text-base font-light">Pemrograman Web</span>
+            </span>
+          </div>
+        </a>
+        <!-- end hover information -->
+      </div>
+      <div class="group grid-card">
+        <div class="grid-card-img bg-[url('/src/img/tugas3peweb.png')]"></div>
+        <!-- hover information -->
+        <a href="https://fahmiabdullah.c1.is/TUGAS_3/3.html" target="_blank"
+          class="grid-card-information group-hover:bg-black/40 group-hover:z-10 flex justify-start items-end px-6 group-hover:animate-none">
+          <div class="hidden group-hover:block mb-6 text-slate-50">
+            <span class="font-semibold text-xl">Tugas 3<br />
+              <span class="text-base font-light">Pemrograman Web</span>
+            </span>
+          </div>
+        </a>
+        <!-- end hover information -->
+      </div>
+
+      <!-- keterngan pengalaman -->
+      <div class="h-15 md:flex">
+        <span class="self-center text-4xl font-thin">and my recent <br />
+          works</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- contact -->
+  <article class="text-zinc-800 dark:text-zinc-50 py-12 ">
+    <h1 class="text-5xl font-semibold mx-8 mt-2">Contact me</h1>
+    <!-- judul -->
+    <div class="flex justify-between mx-8 mt-8 border-b border-zinc-800 dark:border-zinc-100 pt-4 pb-2 items-center">
+      <div>
+        <h3>Social media</h3>
+      </div>
+      <div>
+        <h3>Contact</h3>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-3/5 p-4 flex flex-col justify-center py-14 mx-4 md:mx-0 md:flex-col md:py-28 md:px-12">
+        <h1 class="text-4xl md:text-5xl font-light text-wrap">
+          Follow me at social media for more information about me
+        </h1>
+        <div class="flex flex-row font-light tracking-wide gap-4 md:gap-4">
+          <a class="flex mt-8 md:mt-12" href="https://www.instagram.com/fahmi_abdullah123/" target="_blank">
+            <img id="instagram" src="/src/icon/instagram.svg" alt="" class="h-8" />
+            <span class="px-3 text-2xl hidden md:block">Instagram</span>
+          </a>
+          <a class="flex mt-8 md:mt-12" href="https://www.linkedin.com/in/fahmi-abdullah-45493a256/" target="_blank">
+            <img id="linkedin" src="/src/icon/linkedin.svg" alt="" class="h-8" />
+            <span class="px-3 text-2xl hidden md:block">Linkedin</span>
+          </a>
+          <a class="flex mt-8 md:mt-12" href="https://github.com/Abduls27" target="_blank">
+            <img id="github" src="/src/icon/github.svg" alt="" class="h-8" />
+            <span class="px-3 text-2xl hidden md:block">Github</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="md:w-2/5 px-24">
+        <h2 class="text-3xl font-light pt-16 text-wrap">
+          Send message to contact me using email
+        </h2>
+
+        <!-- message -->
+        <form id="formMessage">
+          <!-- email -->
+          <input type="text" name="subject" id="subject" placeholder="Name"
+            class="mt-16 relative w-full h-10 px-4 focus:outline-none border border-zinc-800 dark:border-zinc-100 dark:bg-stone-100 dark:text-zinc-800">
+          <!-- message -->
+          <textarea name="body" id="body" cols="30" rows="10" placeholder="Message"
+            class="mt-2 px-4 py-4 relative w-full h-36 focus:outline-none border border-zinc-800 dark:border-zinc-100 dark:bg-stone-100 dark:text-zinc-800 resize-none"></textarea>
+
+          <div
+            class="mt-4 relative w-full h-10 group border border-zinc-800 dark:border-zinc-100 transition-all duration-500">
+            <button onclick="submitMail()"
+              class="w-full h-full origin-top-left absolute group-hover:translate-x-[-8px] group-hover:translate-y-[-8px] bg-zinc-700 transition-transform duration-500 ease-in-out">
+             <span class="text-white font-light text-lg">Send
+                  Message</span>
+            </button>
+          </div>
+        </form>
+        <!-- end message -->
+      </div>
+    </div>
+  </article>
+
+  <footer
+    class="w-full bg-zinc-100 dark:bg-zinc-950  flex justify-center items-center px-8 py-4 border-t border-zinc-800 dark:border-zinc-100">
+    <h1 class="text-zinc-800 dark:text-zinc-50">Copyright - fahmi abdullah muslimin</h1>
+  </footer>
+</body>
+<script src="src/script.js"></script>
+
+</html>
