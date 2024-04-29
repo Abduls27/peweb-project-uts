@@ -50,15 +50,13 @@ let originalSvgFill = svg.style.fill;
 let originalPathStroke = path.style.stroke;
 
 btn.addEventListener("click", function () {
-  if (
-    svg.style.fill === "rgb(17 24 39)" &&
-    path.style.stroke === "rgb(17 24 39)"
-  ) {
-    svg.style.fill = originalSvgFill;
-    path.style.stroke = originalPathStroke;
-  } else {
-    svg.style.fill = "rgb(17 24 39)";
-    path.style.stroke = "rgb(17 24 39)";
+  if (checkbox.checked) {
+    btn.classList.remove("text-zinc-100");
+    btn.classList.add("text-zinc-800")
+  } else{
+    btn.classList.remove("text-zinc-100")
+    btn.classList.add("text-zinc-800")
+
   }
 
   document.getElementById("navbar-default").classList.toggle("hidden");
@@ -89,3 +87,31 @@ function submitMail() {
   )}&body=${encodeURIComponent(body)}`;
   window.location.href = emailLink;
 }
+
+window.addEventListener("scroll", function () {
+  const img = document.getElementsByClassName("img-card");
+  
+  for (let i = 0; i < img.length; i++) {
+    const imgs = img[i];
+    const position = imgs.getBoundingClientRect();
+    
+    // Cek jika elemen sudah discroll
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+      imgs.classList.add(
+        "animate-fade-down",
+        "animate-once",
+        "animate-duration-800",
+        "animate-delay-200",
+        "animate-ease-in-out"
+      );
+    } else {
+      imgs.classList.remove(
+        "animate-fade-down",
+        "animate-once",
+        "animate-duration-800",
+        "animate-delay-200",
+        "animate-ease-in-out"
+      );
+    }
+  }
+});
