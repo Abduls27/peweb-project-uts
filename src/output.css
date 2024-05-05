@@ -686,7 +686,7 @@ video {
 
 .bg-move-gradient {
   will-change: contents;
-  background-image: radial-gradient(
+  background: radial-gradient(
         at 89% 63%,
         hsla(32, 90%, 63%, 1) 0px,
         transparent 50%
@@ -702,11 +702,11 @@ video {
   }
 
   50% {
-    background-position: 32% 62%;
+    background-position: 32% 70%;
   }
 
   100% {
-    background-position: 62% 100%;
+    background-position: 42% 100%;
   }
 }
 
