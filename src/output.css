@@ -1331,6 +1331,20 @@ video {
   animation-range-end: cover 30vh;
 }
 
+@media (min-width: 1024px) {
+  .lg\:bg-move-gradient {
+    will-change: contents;
+    background: radial-gradient(
+        at 89% 63%,
+        hsla(32, 90%, 63%, 1) 0px,
+        transparent 50%
+      ),
+    radial-gradient(at 48% 64%, hsla(229, 82%, 63%, 1) 0px, transparent 50%);
+    background-size: 200% 200%;
+    animation: AnimationName 4s ease-in-out infinite alternate;
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
